@@ -11,24 +11,32 @@ function ArbCalculator() {
   const location = useLocation();
   const { flag, budget } = location.state || {};
 
-  const handleArbClick = async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const API_BASE = process.env.REACT_APP_API_BASE || "http://127.0.0.1:8000";
+ const handleArbClick = async () => {
+  setLoading(true);
+  setError(null);
+  try {
+    const API_BASE =
+      process.env.REACT_APP_API_BASE ||
+      (typeof window !== "undefined" && window.location.hostname.endsWith("vercel.app")
+        ? "https://arb-bot-backend.onrender.com"
+        : "http://127.0.0.1:8000");
 
-        const response = await axios.get(`${API_BASE}/api/arb/`, {
-          params: { flag, budget, includeLiveEvents }
-        });
-      setArbData(response.data);
-      console.log('arbData:', response.data);
-    } catch (e) {
-      console.error('Error fetching arbitrage data:', e);
-      setError('Failed to fetch arbitrage data. Please try again later.');
-    } finally {
-      setLoading(false);
-    }
-  };
+    console.log("Using API_BASE:", API_BASE);
+
+    const response = await axios.get(`${API_BASE}/api/arb/`, {
+      params: { flag, budget, includeLiveEvents }
+    });
+
+    setArbData(response.data);
+    console.log("arbData:", response.data);
+  } catch (e) {
+    console.error("Error fetching arbitrage data:", e);
+    setError("Failed to fetch arbitrage data. Please try again later.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   const hasFetched = Array.isArray(arbData);
   const hasArbData = hasFetched && arbData.length > 0;
