@@ -15,9 +15,11 @@ function ArbCalculator() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/arb/', {
-        params: { flag, budget, includeLiveEvents }
-      });
+      const API_BASE = process.env.REACT_APP_API_BASE || "http://127.0.0.1:8000";
+
+        const response = await axios.get(`${API_BASE}/api/arb/`, {
+          params: { flag, budget, includeLiveEvents }
+        });
       setArbData(response.data);
       console.log('arbData:', response.data);
     } catch (e) {
