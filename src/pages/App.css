@@ -1,0 +1,124 @@
+/* src/App.css */
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
+.custom-button {
+  background-color: #4e9160 !important;
+  border-color: #ffffffff !important;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.125rem;
+  max-width: 42rem;
+  
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+.money-button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glowing {
+  box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.7);
+}
+
+.arb-list {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arb-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.arb-bookmakers, .arb-odds, .arb-roi {
+  margin: 5px 0;
+  color: #495057;
+}
+
+.alert {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HeroPage.css */
+
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Ensures hero content is layered above the background */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.text-center {
+  text-align: center; /* fallback if needed */
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.btn-secondary{
+  background-color: #4e9160;
+  border-color: #ffffffff;
+  color: #ffffffff;
+  width: auto;
+  
+}
+
+.btn-secondary:hover{
+  background-color: #4e9160;
+  box-shadow: 0 0 10px 4px rgba(172, 249, 173, 0.8); /* Green glow */
+}
+
