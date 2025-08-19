@@ -8,7 +8,7 @@ It’s split into two parts:
 
 ---
 
-## ✨ What it does
+## What it does
 - Lets users plug in their budget and sportsbook odds.  
 - Calculates arbitrage opportunities automatically.  
 - Shows how much to place on each side for a guaranteed win.  
@@ -16,7 +16,7 @@ It’s split into two parts:
 
 ---
 
-## 🛠️ Tech Used
+##  Tech Used
 - **Frontend:** React, Axios, Bootstrap/CSS  
 - **Backend:** Django, Django REST Framework  
 - **Database:** SQLite (local), works with Postgres for production  
