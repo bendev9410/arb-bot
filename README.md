@@ -3,6 +3,10 @@
 
 <img width="434" height="269" alt="Screenshot 2025-08-21 at 8 59 25 AM" src="https://github.com/user-attachments/assets/056cc9fd-de5d-4872-9e76-1d60fdc0dd9e" />
 
+Live Demo
+
+## 👉 [Check it out here](https://arb-bot-rho.vercel.app)
+
 
 
 This is a project I built to explore how arbitrage betting works and to get more hands-on experience with Django and React. The app pulls sportsbook odds, runs the math in the backend, and shows users where they can lock in a guaranteed profit.  
@@ -30,20 +34,20 @@ It’s split into two parts:
 ---
 
 
-Why I Built It
+## Why I Built It
 
 I’m a big baseball guy, but I’ve also always been curious about the numbers side of sports betting. Arbitrage betting caught my attention because it’s less about “luck” and more about finding mispriced odds across sportsbooks. I figured it would be a fun challenge to build a tool that could crunch those numbers for me.
 
 On top of that, I wanted to get some real-world practice with Django REST Framework and React — not just following tutorials, but actually shipping something that connects a backend, frontend, and external APIs. Arb-Bot became that project.
 
-How It Works
+## How It Works
 
 The backend calls odds APIs and gathers the latest lines from different sportsbooks.
 It runs some math to check if the odds line up for a guaranteed profit (that’s the “arbitrage” part).
 If there’s a match, it calculates exactly how much you should stake on each side.
 The frontend displays it all in a clean, no-BS interface where you just plug in your budget and see results.
 
-What’s Next
+## What’s Next
 
 This started as a portfolio project, but I’d love to keep improving it. Some things I might add:
 More sportsbooks + support for live betting
