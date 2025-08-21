@@ -1,7 +1,8 @@
 # ⚾ Arb-Bot – Sports Betting Arbitrage Calculator  
 
 
-![Arb-Bot Screenshot](./assets/screenshot.png)
+<img width="434" height="269" alt="Screenshot 2025-08-21 at 8 59 25 AM" src="https://github.com/user-attachments/assets/056cc9fd-de5d-4872-9e76-1d60fdc0dd9e" />
+
 
 
 This is a project I built to explore how arbitrage betting works and to get more hands-on experience with Django and React. The app pulls sportsbook odds, runs the math in the backend, and shows users where they can lock in a guaranteed profit.  
