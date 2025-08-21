@@ -4,7 +4,7 @@
 <img width="434" height="269" alt="Screenshot 2025-08-21 at 8 59 25 AM" src="https://github.com/user-attachments/assets/056cc9fd-de5d-4872-9e76-1d60fdc0dd9e" />
 
 
-## 👉 [Check it out here](https://arb-bot-rho.vercel.app)
+## 👉 [Check it out here](https://arb-bot-rho.vercel.app) (May take up to a minute to activate backend during first use)
 
 
 
